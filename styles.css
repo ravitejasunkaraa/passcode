@@ -1,0 +1,117 @@
+body {
+background: #4B79A1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.self-row {
+    display: flex;
+}
+
+.enter-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 75%;
+    flex-direction: column;
+}
+
+.recent-area {
+    width: 25%;
+    height: 500px;
+    border-radius: 8px;
+    padding: 12px 6px;
+    overflow-x: hidden;
+}
+
+
+#pass-save-box {
+ background-color:  #fed049;
+
+    border-radius: 8px;
+    padding: 12 14;
+    margin: 8 4;
+    transition-duration: 1s;
+}
+
+#pass-save-box:hover {
+    cursor: pointer;
+    padding: 35 14;
+    transition-duration: 1s;
+
+}
+
+.inp {
+    border: 3px solid white;
+    color: white;
+    width: 50%;
+    margin: 8px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#mybutton {
+    width: 150px;
+    padding: 12px;
+    margin-top: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+#result-disp {
+    margin-top: 12px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+#sb-t1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+#sb-t2 {
+    font-size: 18px;
+    color: black;
+}
+
+
+
+
+
+
+/*For mobile devices removing recent area*/
+
+@media only screen and (max-width:480px) {
+
+    .self-row {
+        display: block;
+    }
+
+    .enter-area {
+        width: 100%;
+        margin: 40 0px;
+    }
+
+    .recent-area {
+        width: 100%;
+    }
+
+    .inp {
+        width: 80%;
+        padding: 14px;
+    }
+
+    footer {
+        display: none;
+    }
+
+
+}
